@@ -1,38 +1,127 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Estilo global */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #1e1e1e; /* Fundo preto */
+  color: #f5f5f5; /* Texto claro */
+}
+
+/* Estilo do contêiner principal */
 .App {
   text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra preta */
+  border: 2px solid #e63946; /* Borda vermelha */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilo do título com toque tecnológico */
+h1 {
+  font-size: 36px;
+  color: #e63946; /* Vermelho para o título */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  /* Remover brilho */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilo do contêiner de vídeo */
+.video-container {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  background: #1e1e1e; /* Fundo preto para o vídeo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra preta */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #e63946; /* Borda vermelha */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilo do vídeo */
+video {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e63946; /* Borda vermelha */
+}
+
+/* Estilo do contêiner de vídeo processado */
+.processed-video-container {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Estilo do vídeo processado */
+.processed-video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra preta */
+  border: 2px solid #e63946; /* Borda vermelha */
+}
+
+/* Estilo do botão */
+button {
+  background-color: #e63946; /* Vermelho */
+  color: #ffffff; /* Branco */
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px; /* Espaço entre botões */
+  /* Remover brilho */
+}
+
+button:hover {
+  background-color: #d62839; /* Vermelho mais escuro no hover */
+}
+
+/* Estilo do contêiner de botões */
+.button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  align-items: center; /* Centraliza os botões verticalmente */
+  flex-wrap: wrap; /* Permite que os botões se ajustem na tela menor */
+  gap: 10px; /* Espaço entre os botões */
+  margin-top: 20px; /* Margem superior */
+}
+
+/* Estilo do input de arquivo */
+input[type="file"] {
+  display: none;
+}
+
+/* Estilo do botão de upload personalizado */
+.custom-file-upload {
+  background-color: #e63946; /* Vermelho */
   color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Remover brilho */
 }
 
-.App-link {
-  color: #61dafb;
+.custom-file-upload:hover {
+  background-color: #d62839; /* Vermelho mais escuro no hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo do texto de processamento */
+.processing {
+  font-size: 18px;
+  color: #e63946; /* Vermelho */
+  margin-top: 20px;
 }
